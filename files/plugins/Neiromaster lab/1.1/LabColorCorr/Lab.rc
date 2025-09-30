@@ -1,0 +1,234 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FILTER DIALOGEX 0, 0, 486, 319
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "filter: Lab color correction"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,432,298,47,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,338,298,46,14
+    LTEXT           "RGB Gamma",IDC_STATIC,19,18,47,8
+    CONTROL         "Slider1",IDC_RGB_G,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,19,31,165,13
+    LTEXT           "0.06",IDC_STATIC,19,44,20,10
+    RTEXT           "3",IDC_STATIC,154,44,23,10
+    PUSHBUTTON      "1",IDC_ZERO_RGB_G,69,44,8,13,BS_BOTTOM
+    DEFPUSHBUTTON   "Show preview",IDPREVIEW,7,298,51,14,WS_GROUP
+    RTEXT           "Static",IDC_RGB_G_TEXT,145,18,33,13,SS_CENTERIMAGE
+    LTEXT           "L Gamma",IDC_STATIC,20,72,47,8
+    CONTROL         "",IDC_L_G,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,20,85,165,13
+    LTEXT           "0.06",IDC_STATIC,20,98,20,10
+    RTEXT           "2",IDC_STATIC,155,97,23,10
+    PUSHBUTTON      "1",IDC_ZERO_L_G,97,98,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_L_G_TEXT,146,72,33,13,SS_CENTERIMAGE
+    LTEXT           "+ A(Red) Gamma",IDC_STATIC,20,125,58,8
+    CONTROL         "",IDC_POL_A_G,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,20,138,165,13
+    LTEXT           "0.06",IDC_STATIC,20,151,20,10
+    RTEXT           "2",IDC_STATIC,155,150,23,10
+    PUSHBUTTON      "1",IDC_ZERO_POL_A_G,97,151,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_POL_A_G_TEXT,146,125,33,13,SS_CENTERIMAGE
+    LTEXT           "L Gain",IDC_STATIC,195,72,47,8
+    CONTROL         "",IDC_L_AMP,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,195,84,165,13
+    LTEXT           "0",IDC_STATIC,195,96,20,10
+    RTEXT           "2",IDC_STATIC,330,97,23,10
+    PUSHBUTTON      "1",IDC_ZERO_L_AMP,274,97,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_L_AMP_TEXT,321,72,33,13,SS_CENTERIMAGE
+    LTEXT           "+ A(Red) Gain",IDC_STATIC,195,125,47,8
+    CONTROL         "",IDC_POL_A_AMP,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,195,138,165,13
+    LTEXT           "0",IDC_STATIC,195,150,20,10
+    RTEXT           "2",IDC_STATIC,330,150,23,10
+    PUSHBUTTON      "1",IDC_ZERO_POL_A_AMP,274,151,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_POL_A_AMP_TEXT,321,125,33,13,SS_CENTERIMAGE
+    LTEXT           "L Offset",IDC_STATIC,369,72,47,8
+    CONTROL         "",IDC_L_SM,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,369,84,99,13
+    LTEXT           "-64",IDC_STATIC,375,96,20,10
+    RTEXT           "64",IDC_STATIC,443,96,20,10
+    PUSHBUTTON      "0",IDC_ZERO_L_SM,415,97,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_L_SM_TEXT,426,72,33,9,SS_CENTERIMAGE
+    LTEXT           "A balance (Red-Green)",IDC_STATIC,368,127,76,8
+    CONTROL         "",IDC_A_BALANCE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,369,138,99,13
+    LTEXT           "-128",IDC_STATIC,375,151,20,10
+    RTEXT           "128",IDC_STATIC,443,151,20,10
+    PUSHBUTTON      "0",IDC_ZERO_A_BALANCE,415,151,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_A_BALANCE_TEXT,448,125,21,9,SS_CENTERIMAGE
+    LTEXT           "RGB Input offset",IDC_STATIC,226,18,63,8
+    CONTROL         "",IDC_RGB_IN_SM,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,226,31,99,13
+    LTEXT           "-64",IDC_STATIC,232,44,20,10
+    RTEXT           "64",IDC_STATIC,300,44,20,10
+    PUSHBUTTON      "0",IDC_ZERO_RGB_IN_SM,272,44,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_RGB_IN_SM_TEXT,284,18,33,9,SS_CENTERIMAGE
+    LTEXT           "RGB Output offset",IDC_STATIC,367,18,63,8
+    CONTROL         "",IDC_RGB_OUT_SM,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,367,31,99,13
+    LTEXT           "-64",IDC_STATIC,373,44,20,10
+    RTEXT           "64",IDC_STATIC,441,44,20,10
+    PUSHBUTTON      "0",IDC_ZERO_RGB_OUT_SM,413,44,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_RGB_OUT_SM_TEXT,425,18,33,9,SS_CENTERIMAGE
+    GROUPBOX        "RGB adjust",IDC_STATIC,7,7,472,52
+    GROUPBOX        "L(luma) adjust",IDC_STATIC,7,62,472,51
+    LTEXT           "- A(Green) Gamma",IDC_STATIC,20,164,58,8
+    CONTROL         "",IDC_OTR_A_G,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,20,177,165,13
+    LTEXT           "0.06",IDC_STATIC,20,191,20,10
+    RTEXT           "2",IDC_STATIC,156,189,23,10
+    PUSHBUTTON      "1",IDC_ZERO_OTR_A_G,98,191,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_OTR_A_G_TEXT,146,164,33,13,SS_CENTERIMAGE
+    LTEXT           "- A(Green) Gain",IDC_STATIC,195,164,54,8
+    CONTROL         "",IDC_OTR_A_AMP,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,195,177,165,13
+    LTEXT           "0",IDC_STATIC,195,189,20,10
+    RTEXT           "2",IDC_STATIC,329,189,23,10
+    PUSHBUTTON      "1",IDC_ZERO_OTR_A_AMP,273,191,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_OTR_A_AMP_TEXT,321,164,33,13,SS_CENTERIMAGE
+    LTEXT           "+ B(Yellow) Gamma",IDC_STATIC,20,216,71,8
+    CONTROL         "",IDC_POL_B_G,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,20,228,165,13
+    LTEXT           "0.06",IDC_STATIC,20,241,20,10
+    RTEXT           "2",IDC_STATIC,156,241,23,10
+    PUSHBUTTON      "1",IDC_ZERO_POL_B_G,98,241,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_POL_B_G_TEXT,146,216,33,13,SS_CENTERIMAGE
+    LTEXT           "+ B(Yellow) Gain",IDC_STATIC,195,216,68,8
+    CONTROL         "",IDC_POL_B_AMP,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,195,228,165,13
+    LTEXT           "0",IDC_STATIC,195,241,20,10
+    RTEXT           "2",IDC_STATIC,329,241,23,10
+    PUSHBUTTON      "1",IDC_ZERO_POL_B_AMP,273,241,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_POL_B_AMP_TEXT,321,216,33,13,SS_CENTERIMAGE
+    LTEXT           "B balance (Yellow-Blue)",IDC_STATIC,367,217,76,8
+    CONTROL         "",IDC_B_BALANCE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,369,228,99,13
+    LTEXT           "-128",IDC_STATIC,375,241,20,10
+    RTEXT           "128",IDC_STATIC,443,241,20,10
+    PUSHBUTTON      "0",IDC_ZERO_B_BALANCE,415,241,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_B_BALANCE_TEXT,447,216,21,9,SS_CENTERIMAGE
+    LTEXT           "- B(Blue) Gamma",IDC_STATIC,20,255,68,8
+    CONTROL         "",IDC_OTR_B_G,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,20,268,165,13
+    LTEXT           "0.06",IDC_STATIC,20,281,20,10
+    RTEXT           "2",IDC_STATIC,156,280,23,10
+    PUSHBUTTON      "1",IDC_ZERO_OTR_B_G,98,281,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_OTR_B_G_TEXT,146,255,33,13,SS_CENTERIMAGE
+    LTEXT           "- B(Blue) Gain",IDC_STATIC,195,255,54,8
+    CONTROL         "",IDC_OTR_B_AMP,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,195,268,165,13
+    LTEXT           "0",IDC_STATIC,195,280,20,10
+    RTEXT           "2",IDC_STATIC,329,280,23,10
+    PUSHBUTTON      "1",IDC_ZERO_OTR_B_AMP,273,281,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_OTR_B_AMP_TEXT,321,255,33,13,SS_CENTERIMAGE
+    GROUPBOX        "A (Red-Green) adjust",IDC_STATIC,7,115,472,91
+    GROUPBOX        "B (Yellow-Blue) adjust",IDC_STATIC,7,207,472,89
+    LTEXT           "A virtual balance ",IDC_A_VIRT_BALANCE_LABEL,368,166,64,
+                    8
+    CONTROL         "",IDC_A_VIRT_BALANCE,"msctls_trackbar32",TBS_AUTOTICKS,
+                    370,177,99,13
+    PUSHBUTTON      "0",IDC_ZERO_A_VIRT_BALANCE,416,190,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_A_VIRT_BALANCE_TEXT,448,165,21,9,
+                    SS_CENTERIMAGE
+    LTEXT           "B virtual balance",IDC_B_VIRT_BALANCE_LABEL,367,257,65,
+                    8
+    CONTROL         "",IDC_B_VIRT_BALANCE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,369,268,99,13
+    PUSHBUTTON      "0",IDC_ZERO_B_VIRT_BALANCE,415,281,8,13,BS_BOTTOM
+    RTEXT           "Static",IDC_B_VIRT_BALANCE_TEXT,447,256,21,9,
+                    SS_CENTERIMAGE
+    CONTROL         "Use virual white point",IDC_USE_VIRT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,198,303,99,9
+    LTEXT           "-128",IDC_STATIC,375,191,20,10
+    RTEXT           "128",IDC_STATIC,443,191,20,10
+    LTEXT           "-128",IDC_STATIC,375,282,20,10
+    RTEXT           "128",IDC_STATIC,443,282,20,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 479
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

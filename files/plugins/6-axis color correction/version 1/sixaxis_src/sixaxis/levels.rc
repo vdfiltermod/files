@@ -1,0 +1,136 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LEVELS DIALOGEX 0, 0, 271, 333
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "filter: 6-axis color correction"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,162,312,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,217,312,47,14
+    PUSHBUTTON      "Show preview",IDPREVIEW,7,312,54,14,WS_GROUP
+    LTEXT           "Intensity",IDC_STATIC,7,7,42,8
+    EDITTEXT        IDC_I_V0,46,5,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_I_V1,104,5,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_I_V2,161,5,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_I_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,16,257,14
+    LTEXT           "Red-Green",IDC_STATIC,7,38,42,8
+    EDITTEXT        IDC_D0_V,161,35,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_D0_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,46,257,14
+    LTEXT           "Yellow-Blue",IDC_STATIC,9,67,42,8
+    EDITTEXT        IDC_D1_V,161,64,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_D1_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,75,257,14
+    LTEXT           "Saturation",IDC_STATIC,7,97,42,8
+    EDITTEXT        IDC_S_V2,161,94,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_S_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,105,257,14
+    LTEXT           "Red",IDC_STATIC,7,127,42,8
+    EDITTEXT        IDC_C0_V1,104,125,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_C0_V2,161,125,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_C0_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,136,257,14
+    LTEXT           "Orange",IDC_STATIC,7,158,42,8
+    EDITTEXT        IDC_C1_V1,104,156,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_C1_V2,161,156,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_C1_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,167,257,14
+    LTEXT           "Lime",IDC_STATIC,7,189,42,8
+    EDITTEXT        IDC_C2_V1,104,187,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_C2_V2,161,187,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_C2_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,198,257,14
+    LTEXT           "Emerald",IDC_STATIC,7,220,42,8
+    EDITTEXT        IDC_C3_V1,104,218,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_C3_V2,161,218,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_C3_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,229,257,14
+    LTEXT           "Blue",IDC_STATIC,7,251,42,8
+    EDITTEXT        IDC_C4_V1,104,249,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_C4_V2,161,249,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_C4_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,260,257,14
+    LTEXT           "Purple",IDC_STATIC,7,282,42,8
+    EDITTEXT        IDC_C5_V1,104,280,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_C5_V2,161,280,46,10,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "",IDC_C5_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,291,257,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LEVELS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 326
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

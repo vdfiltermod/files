@@ -1,0 +1,213 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FILTER_TUTORIAL DIALOGEX 0, 0, 201, 319
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filter: Color Tools"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Accumulate across frames",IDC_ACCUM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,59,212,99,10
+    DEFPUSHBUTTON   "OK",IDOK,83,298,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,298,50,14
+    CONTROL         "16-235",IDC_RNG235,"Button",BS_AUTORADIOBUTTON,97,71,44,
+                    14
+    CONTROL         "0-255",IDC_RNG255,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,31,71,36,12
+    CONTROL         "Std Def (601)",IDC_STD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,31,56,62,14
+    CONTROL         "High Def (709)",IDC_HIGH,"Button",BS_AUTORADIOBUTTON,97,
+                    57,69,12
+    GROUPBOX        "Source Attributes",IDC_IN,17,32,168,69,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Video",IDC_MODE2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    28,145,63,12,WS_EX_TRANSPARENT
+    CONTROL         "Wave Form Monitor",IDC_MODE3,"Button",
+                    BS_AUTORADIOBUTTON,28,178,86,12,WS_EX_TRANSPARENT
+    CONTROL         "Histograms",IDC_MODE0,"Button",BS_AUTORADIOBUTTON,28,
+                    200,50,12,WS_EX_TRANSPARENT
+    CONTROL         "Hot Pixel Scan",IDC_MODE1,"Button",BS_AUTORADIOBUTTON,
+                    28,223,63,12,WS_EX_TRANSPARENT
+    CONTROL         "Vectorscope",IDC_MODE4,"Button",BS_AUTORADIOBUTTON,28,
+                    161,63,12,WS_EX_TRANSPARENT
+    CONTROL         "NTSC",IDC_NTSC,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    31,85,38,14
+    CONTROL         "PAL",IDC_PAL,"Button",BS_AUTORADIOBUTTON,97,85,29,14
+    GROUPBOX        "View",IDC_OUTVIEW,17,135,168,135,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Gamma Corrected",IDC_GAMMA,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | BS_MULTILINE | WS_DISABLED | WS_TABSTOP,31,43,
+                    73,12
+    CONTROL         "Red",IDC_RED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,
+                    114,33,10
+    CONTROL         "Green",IDC_GREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    63,114,33,10
+    CONTROL         "Blue",IDC_BLUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    102,114,33,10
+    CONTROL         "Luma",IDC_LUMA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    138,114,33,10
+    COMBOBOX        AFX_IDC_HOTCHANGE,91,235,71,53,CBS_DROPDOWNLIST | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        AFX_IDC_MAXIRE,91,248,36,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Change:",IDC_STATIC,58,237,28,8,0,WS_EX_RIGHT
+    LTEXT           "Max IRE:",IDC_STATIC,45,251,41,8,0,WS_EX_RIGHT
+    GROUPBOX        "Channels",IDC_OUTVIEW2,17,104,167,27,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Show Grid",IDC_WFMGRID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,190,49,10
+    CONTROL         "Passthru",IDC_PASSTHRU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,13,123,10
+    PUSHBUTTON      "Save as default",IDC_SAVE,127,276,67,14
+    PUSHBUTTON      "Preview",IDC_PREVIEW,7,298,50,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FILTER_TUTORIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "trevlac\0"
+            VALUE "FileDescription", "clrtools\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "clrtools\0"
+            VALUE "OriginalFilename", "clrtools.vdf\0"
+            VALUE "ProductName", "clrtools\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FILTER_TUTORIAL DLGINIT
+BEGIN
+    AFX_IDC_HOTCHANGE, 0x403, 9, 0
+0x6f54, 0x4220, 0x616c, 0x6b63, "\000" 
+    AFX_IDC_HOTCHANGE, 0x403, 10, 0
+0x6e49, 0x6574, 0x736e, 0x7469, 0x0079, 
+    AFX_IDC_HOTCHANGE, 0x403, 11, 0
+0x6153, 0x7574, 0x6172, 0x6974, 0x6e6f, "\000" 
+    AFX_IDC_MAXIRE, 0x403, 4, 0
+0x3031, 0x0030, 
+    AFX_IDC_MAXIRE, 0x403, 4, 0
+0x3131, 0x0030, 
+    AFX_IDC_MAXIRE, 0x403, 4, 0
+0x3231, 0x0030, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

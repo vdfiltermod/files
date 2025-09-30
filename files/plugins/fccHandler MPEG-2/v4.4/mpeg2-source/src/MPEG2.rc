@@ -1,0 +1,238 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROGRESS DIALOGEX 0, 0, 200, 58
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_VISIBLE | WS_CAPTION
+CAPTION "MPEG-2 plugin by fccHandler"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Parsing MPEG-2",IDC_STATIC_MESSAGE,8,7,184,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",0x1,8,20,184,11
+    PUSHBUTTON      "Abort",IDCANCEL,142,38,50,14
+    LTEXT           "0 of 0 sectors",IDC_CURRENT_VALUE,8,40,114,8
+END
+
+IDD_INFORMATION DIALOGEX 0, 0, 320, 239
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MPEG Information"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Video Stream",IDC_STATIC,8,8,304,128
+    LTEXT           "Frame size, frames per second:",IDC_STATIC,16,18,104,8
+    LTEXT           "Number of frames (duration):",IDC_STATIC,16,28,104,8
+    LTEXT           "Video version, format:",IDC_STATIC,16,38,104,8
+    LTEXT           "Aspect ratio information:",IDC_STATIC,16,48,104,8
+    LTEXT           "Display width, display height:",IDC_STATIC,16,58,104,8
+    LTEXT           "Detected colorspace:",IDC_STATIC,16,68,104,8
+    LTEXT           "Number of I, P, and B frames:",IDC_STATIC,16,78,104,8
+    LTEXT           "I-frame min/avg/max(total) size:",IDC_STATIC,16,88,104,8
+    LTEXT           "P-frame min/avg/max(total) size:",IDC_STATIC,16,98,104,8
+    LTEXT           "B-frame min/avg/max(total) size:",IDC_STATIC,16,108,104,8
+    LTEXT           "Average bitrate:",IDC_STATIC,16,118,104,8
+    RTEXT           "",IDC_VIDEO_FORMAT,124,18,180,10,SS_SUNKEN
+    RTEXT           "",IDC_VIDEO_NUMFRAMES,124,28,180,10,SS_SUNKEN
+    RTEXT           "",IDC_CHROMA_FORMAT,124,38,180,10,SS_SUNKEN
+    RTEXT           "",IDC_ASPECT_RATIO,124,48,180,10,SS_SUNKEN
+    RTEXT           "",IDC_DISPLAY_WH,124,58,180,10,SS_SUNKEN
+    RTEXT           "",IDC_COLORSPACE,124,68,180,10,SS_SUNKEN
+    RTEXT           "",IDC_VIDEO_FRAMETYPECNT,124,78,180,10,SS_SUNKEN
+    RTEXT           "",IDC_VIDEO_IFRAMES,124,88,180,10,SS_SUNKEN
+    RTEXT           "",IDC_VIDEO_PFRAMES,124,98,180,10,SS_SUNKEN
+    RTEXT           "",IDC_VIDEO_BFRAMES,124,108,180,10,SS_SUNKEN
+    RTEXT           "",IDC_VIDEO_AVGBITRATE,124,118,180,10,SS_SUNKEN
+    GROUPBOX        "Audio Stream",IDC_STATIC,8,138,304,72
+    LTEXT           "Format, bitrate, type:",IDC_STATIC,15,148,104,8
+    LTEXT           "Number of frames (duration):",IDC_STATIC,15,158,104,8
+    LTEXT           "Min/avg/max(total) frame size:",IDC_STATIC,15,168,104,8
+    LTEXT           "Detected skew (internal):",IDC_STATIC,15,178,104,8
+    RTEXT           "",IDC_AUDIO_FORMAT,124,148,180,10,SS_SUNKEN
+    RTEXT           "",IDC_AUDIO_NUMFRAMES,124,158,180,10,SS_SUNKEN
+    RTEXT           "",IDC_AUDIO_SIZE,124,168,180,10,SS_SUNKEN
+    RTEXT           "",IDC_AUDIO_SKEW,124,178,180,10,SS_SUNKEN
+    RTEXT           "",IDC_STREAMNUM,57,195,57,8
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS | UDS_HORZ | NOT WS_VISIBLE | WS_DISABLED,123,193,41,11
+    DEFPUSHBUTTON   "OK",IDOK,262,215,50,14
+END
+
+IDD_APPEND DIALOG  0, 0, 286, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open Multiple VOBs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,169,136,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,229,136,50,14
+    LISTBOX         IDC_LIST1,7,7,211,120,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add...",IDC_ADD,229,7,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,229,25,50,14
+    PUSHBUTTON      "Move up",IDC_MOVEUP,229,43,50,14,WS_DISABLED
+    PUSHBUTTON      "Move down",IDC_MOVEDOWN,229,61,50,14,WS_DISABLED
+    PUSHBUTTON      "Sort",IDC_SORT,229,79,50,14,WS_DISABLED
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 227, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MPEG-2 Plugin Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Open multiple VOB files as one virtual file",IDC_MULTIPLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,144,10
+    CONTROL         "Create an index file:  [filename].midx",IDC_WRITE_INDEX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,128,10
+    CONTROL         "Allow ""Direct Stream Copy"" of MPEG audio",IDC_ALLOW_DSC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,29,152,10
+    CONTROL         "Use ""matrix coefficients"" value when converting to RGB",IDC_ALLOW_MATRIX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,193,10
+    PUSHBUTTON      "Save as default",IDC_SAVE,7,64,66,14
+    DEFPUSHBUTTON   "OK",IDOK,113,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,65,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_INFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        VERTGUIDE, 312
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_APPEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,5,0,0
+ PRODUCTVERSION 4,5,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "http://fcchandler.home.comcast.net"
+            VALUE "CompanyName", "fccHandler"
+            VALUE "FileDescription", "MPEG-2 plugin for VirtualDub"
+            VALUE "FileVersion", "4, 5, 0, 0"
+            VALUE "InternalName", "MPEG-2 plugin"
+            VALUE "LegalCopyright", "Copyright © 2007-2012 by fccHandler"
+            VALUE "OriginalFilename", "MPEG2.vdplugin"
+            VALUE "ProductName", "MPEG-2 plugin"
+            VALUE "ProductVersion", "4, 5, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,90 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OWDENOISE DIALOGEX 0, 0, 227, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "filter: wavelet denoise"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,115,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,173,115,47,14
+    LTEXT           "Depth:",IDC_STATIC,7,7,26,8
+    EDITTEXT        IDC_DEPTH_EDIT,36,5,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "Slider1",IDC_DEPTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,19,213,13
+    LTEXT           "8",IDC_STATIC,10,34,24,10
+    RTEXT           "16",IDC_STATIC,190,32,24,10
+    RTEXT           "Luma strength:",IDC_STATIC,18,45,71,8
+    EDITTEXT        IDC_LUMA_EDIT,93,43,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_LUMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,58,213,13
+    RTEXT           "Chroma strength:",IDC_STATIC,14,76,76,8
+    EDITTEXT        IDC_CHROMA_EDIT,93,74,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_CHROMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,88,213,13
+    PUSHBUTTON      "Show preview",IDPREVIEW,7,115,54,14,WS_GROUP
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

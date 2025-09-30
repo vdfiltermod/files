@@ -1,0 +1,111 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DENOISE DIALOGEX 0, 0, 227, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "filter: high quality 3d denoise"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Show preview",IDPREVIEW,7,166,54,14,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,120,166,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,173,166,47,14
+    RTEXT           "Luma strength:",IDC_STATIC,18,8,71,8
+    EDITTEXT        IDC_LUMA_EDIT,93,6,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_LUMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,21,213,13
+    RTEXT           "Chroma strength:",IDC_STATIC,14,39,76,8
+    EDITTEXT        IDC_CHROMA_EDIT,93,37,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_CHROMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,51,213,13
+    RTEXT           "Temporal depth:",IDC_STATIC,14,70,58,8
+    EDITTEXT        IDC_TDEPTH_EDIT,76,67,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_TDEPTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,83,213,13
+    CONTROL         "Recursive",IDC_RECURSIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,69,48,10
+    RTEXT           "Luma temporal:",IDC_STATIC,18,100,71,8
+    EDITTEXT        IDC_TLUMA_EDIT,93,98,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_TLUMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,113,213,13
+    RTEXT           "Chroma temporal:",IDC_STATIC,14,130,76,8
+    EDITTEXT        IDC_TCHROMA_EDIT,93,129,32,12,ES_RIGHT | ES_MULTILINE
+    CONTROL         "",IDC_TCHROMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_NOTICKS | WS_TABSTOP,7,143,213,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DENOISE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

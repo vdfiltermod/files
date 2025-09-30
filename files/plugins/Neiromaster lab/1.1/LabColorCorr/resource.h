@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by Lab.rc
+//
+#define IDPREVIEW                       3
+#define IDD_FILTER                      101
+#define IDC_HUE                         1000
+#define IDC_RGB_G                       1000
+#define IDC_SATURATION                  1001
+#define IDC_Y_G                         1001
+#define IDC_L_G                         1001
+#define IDC_INTENSITY                   1002
+#define IDC_X_G                         1002
+#define IDC_POL_A_G                     1002
+#define IDC_ZEROH                       1003
+#define IDC_ZERO_RGB_G                  1003
+#define IDC_ZEROS                       1004
+#define IDC_ZERO_Y_G                    1004
+#define IDC_ZERO_L_G                    1004
+#define IDC_ZEROI                       1005
+#define IDC_ZERO_X_G                    1005
+#define IDC_ZERO_POL_A_G                1005
+#define IDC_RED                         1006
+#define IDC_Z_G                         1006
+#define IDC_GREEN                       1007
+#define IDC_ZERO_Z_G                    1007
+#define IDC_BLUE                        1008
+#define IDC_Y_AMP                       1008
+#define IDC_L_AMP                       1008
+#define IDC_YELLOW                      1009
+#define IDC_ZERO_Y_AMP                  1009
+#define IDC_ZERO_L_AMP                  1009
+#define IDC_CYAN                        1010
+#define IDC_X_AMP                       1010
+#define IDC_POL_A_AMP                   1010
+#define IDC_MAGENTA                     1011
+#define IDC_ZERO_X_AMP                  1011
+#define IDC_ZERO_POL_A_AMP              1011
+#define IDC_PRESERVE                    1012
+#define IDC_Z_AMP                       1012
+#define IDC_ZERO_Z_AMP                  1013
+#define IDC_Y_SM                        1014
+#define IDC_L_SM                        1014
+#define IDC_ZERO_Y_SM                   1015
+#define IDC_ZERO_L_SM                   1015
+#define IDC_HUETEXT                     1016
+#define IDC_RGB_G_TEXT                  1016
+#define IDC_SATTEXT                     1017
+#define IDC_Y_G_TEXT                    1017
+#define IDC_L_G_TEXT                    1017
+#define IDC_INTTEXT                     1018
+#define IDC_X_G_TEXT                    1018
+#define IDC_POL_A_G_TEXT                1018
+#define IDC_Z_G_TEXT                    1019
+#define IDC_USE_VIRT                    1019
+#define IDC_Y_AMP_TEXT                  1020
+#define IDC_L_AMP_TEXT                  1020
+#define IDC_X_AMP_TEXT                  1021
+#define IDC_POL_A_AMP_TEXT              1021
+#define IDC_Z_AMP_TEXT                  1022
+#define IDC_B_VIRT_BALANCE_             1022
+#define IDC_B_VIRT_BALANCE_LABEL        1022
+#define IDC_Y_SM_TEXT                   1023
+#define IDC_L_SM_TEXT                   1023
+#define IDC_X_SM                        1024
+#define IDC_A_BALANCE                   1024
+#define IDC_ZERO_X_SM                   1025
+#define IDC_ZERO_A_BALANCE              1025
+#define IDC_X_SM_TEXT                   1026
+#define IDC_A_BALANCE_TEXT              1026
+#define IDC_Z_SM                        1027
+#define IDC_A_VIRT_BALANCE              1027
+#define IDC_ZERO_Z_SM                   1028
+#define IDC_ZERO_A_VIRT_BALANCE         1028
+#define IDC_Z_SM_TEXT                   1029
+#define IDC_A_VIRT_BALANCE_TEXT         1029
+#define IDC_RGB_IN_SM                   1030
+#define IDC_ZERO_RGB_IN_SM              1031
+#define IDC_RGB_IN_SM_TEXT              1032
+#define IDC_RGB_OUT_SM                  1033
+#define IDC_ZERO_RGB_IN_SM2             1034
+#define IDC_ZERO_RGB_OUT_SM             1034
+#define IDC_RGB_OUT_SM_TEXT             1035
+#define IDC_OTR_A_G                     1036
+#define IDC_ZERO_OTR_A_G                1037
+#define IDC_OTR_A_G_TEXT                1038
+#define IDC_OTR_A_AMP                   1039
+#define IDC_ZERO_OTR_A_AMP              1040
+#define IDC_OTR_A_AMP_TEXT              1041
+#define IDC_POL_B_G                     1042
+#define IDC_ZERO_POL_B_G                1043
+#define IDC_POL_B_G_TEXT                1044
+#define IDC_POL_B_AMP                   1045
+#define IDC_ZERO_POL_B_AMP              1046
+#define IDC_POL_B_AMP_TEXT              1047
+#define IDC_B_BALANCE                   1048
+#define IDC_ZERO_B_BALANCE              1049
+#define IDC_B_BALANCE_TEXT              1050
+#define IDC_OTR_B_G                     1051
+#define IDC_ZERO_OTR_B_G                1052
+#define IDC_OTR_B_G_TEXT                1053
+#define IDC_OTR_B_AMP                   1054
+#define IDC_ZERO_OTR_B_AMP              1055
+#define IDC_OTR_B_AMP_TEXT              1056
+#define IDC_B_VIRT_BALANCE              1057
+#define IDC_ZERO_B_VIRT_BALANCE         1058
+#define IDC_B_VIRT_BALANCE_TEXT         1059
+#define IDC_A_VIRT_BALANCE_LABEL        1060
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        102
+#define _APS_NEXT_COMMAND_VALUE         40001
+#define _APS_NEXT_CONTROL_VALUE         1061
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

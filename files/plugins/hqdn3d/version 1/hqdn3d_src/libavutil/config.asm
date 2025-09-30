@@ -1,0 +1,2 @@
+%define HAVE_ALIGNED_STACK 1
+%define HAVE_CPUNOP 1

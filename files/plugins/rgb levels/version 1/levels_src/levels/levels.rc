@@ -1,0 +1,113 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LEVELS DIALOGEX 0, 0, 227, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "filter: rgb levels"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,143,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,173,143,47,14
+    PUSHBUTTON      "Show preview",IDPREVIEW,7,143,54,14,WS_GROUP
+    LTEXT           "Red",IDC_STATIC,7,9,42,8
+    EDITTEXT        IDC_R_V0,59,7,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_R_V1,117,7,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_R_V2,174,7,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_R_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,26,213,19
+    LTEXT           "Green",IDC_STATIC,7,54,42,8
+    EDITTEXT        IDC_G_V0,59,51,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_V1,117,51,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_V2,174,51,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_G_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,70,213,19
+    LTEXT           "Blue",IDC_STATIC,7,97,42,8
+    EDITTEXT        IDC_B_V0,59,95,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_V1,117,95,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_V2,174,95,46,13,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_B_CONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY,7,114,213,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LEVELS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
